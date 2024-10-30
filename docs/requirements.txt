@@ -1,0 +1,7 @@
+myst_nb
+myst-parser
+sphinx
+pydata_sphinx_theme
+ipython
+numpy
+pandas

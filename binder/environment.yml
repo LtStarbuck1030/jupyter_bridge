@@ -1,4 +1,5 @@
-# a mybinder.org-ready environment for demoing jupyter_bridge
+
+ # a mybinder.org-ready environment for demoing jupyter_bridge
 # this environment may also be used locally on Linux/MacOS/Windows, e.g.
 #
 #   conda env update --file binder/environment.yml
@@ -18,4 +19,12 @@ dependencies:
   - pip
   - wheel
   # additional packages for demos
-  # - ipywidgets
+  - ipywidgets
+  - numpy
+  - pandas
+  - solara
+  - plotly
+  - matplotlib
+  - pip:
+      - mesa[rec]>=3.0.0b2
+      - mesa-geo>=0.9.0a1

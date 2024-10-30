@@ -26,6 +26,11 @@ dependencies = [
 ]
 dynamic = ["version", "description", "authors", "urls", "keywords"]
 
+docs = ["ipython",
+  "myst_nb",
+  "myst-parser",
+  "sphinx"]
+
 [tool.hatch.version]
 source = "nodejs"
 
@@ -69,7 +74,8 @@ version_cmd = "hatch version"
 before-build-npm = [
     "python -m pip install 'jupyterlab>=4.0.0,<5'",
     "jlpm",
-    "jlpm build:prod"
+    "jlpm build:prod",
+    "myst_nb"
 ]
 before-build-python = ["jlpm clean:all"]
 
